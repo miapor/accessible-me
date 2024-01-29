@@ -1,8 +1,9 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
-  margin: 0;
-  padding: 0;
+   background-color: #ffffffdd; /*i chose this color becuase it is better for user and it wont bother users eyes */
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 h1,
@@ -12,32 +13,45 @@ h4,
 h5,
 h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  font-size: 2rem;
 }
 
-.container {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 1rem;
+.skip-link{
+  position: absolute;
+  top: -500px;
+  left: 0;
+  background: #ce3636fb;
+  color: rgb(24, 23, 23);
+  font-size: 1rem;
+  padding: 8px;
+  z-index: 100;
+  border-radius: 20px;
+  margin: 10px 0 0 10px;
+  font-weight: bolder;
+}
+
+.skip-link:focus{
+  top: 0;
 }
 
 img {
   width: 100%;
 }
 
-.main-nav ul {
+nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 2rem 0;
   padding: 0;
 }
 
-.main-nav ul li {
+nav ul li {
   flex: 1;
   text-align: center;
 }
 
-.main-nav ul li a {
+nav ul li a {
   display: block;
   color: inherit;
   text-decoration: none;
@@ -47,16 +61,18 @@ img {
 form input,
 form textarea {
   display: block;
-  width: 100%;
+  width: 95%;
+  max-width: auto;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
+  
 }
 
 form textarea {
   min-height: 150px;
   max-height: 150px;
   height: 150px;
-  resize: none;
+  resize: vertical;
 }
 
 form button {
@@ -66,6 +82,8 @@ form button {
   text-transform: uppercase;
 }
 
-.site-footer {
-  padding: 2rem 0;
+footer p{
+  padding: 1rem 0;
+  width: 100%; 
+  text-align: center;
 }
